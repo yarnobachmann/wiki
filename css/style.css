@@ -1,0 +1,239 @@
+html,body {
+    margin: 0rem;
+    padding: 0rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    --theme-1: #3E3C3C;
+    --theme-2: #E1DCD9;
+    --accent: #5e0a0a;
+    --white: #E1DCD9; 
+    --dark-font: #0D0A0B;
+    --light-font: #F4EDED;
+    --font-size-p: 21px;
+    --font-size-title: 41px;
+    --border-color: #8282822f;
+}
+
+.fc {
+    flex-direction: column;
+}
+
+.f {
+    display: flex;
+}
+
+.container {
+    margin: 1rem;
+    width: 100%;
+}
+
+.row {
+    margin: 1rem 10rem;
+}
+
+.flexRow {
+    padding: 1rem 1rem;
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.btnGroup {
+    gap: 1rem;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.noPadding {
+    padding: 0rem;
+}
+
+.card {
+    border-radius: .5rem;
+    -webkit-box-shadow: 13px 14px 6px -7px rgba(0,0,0,0.4);
+    -moz-box-shadow: 13px 14px 6px -7px rgba(0,0,0,0.4);
+    box-shadow: 13px 14px 6px -7px rgba(0,0,0,0.4);
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    border: .1rem solid var(--border-color) ;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-font)
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;    
+    background-color: var(--theme-1);
+    width: 100%;
+    height: 5%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.align {
+    align-items: center;
+}
+
+.sidebar {
+    display: flex;
+    background-color: var(--theme-2);
+    width: 100%;
+    flex: 1 1 550px;
+    height: 100%;
+    overflow-y: scroll;
+    font-size: var(--font-size-p);
+    color: var(--dark-font);
+}
+
+.sideContainer {
+    margin: 1rem;
+}
+
+.sidebar a {
+    color: var(--dark-font);
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+    padding: 2rem;
+}
+
+.main {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    flex: 1 1 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    width: 100%;   
+    height: 90%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--accent);
+}
+
+table thead tr {
+    background-color: var(--accent);
+    color: #ffffff;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+footer {
+    display: flex;
+    background-color: var(--theme-1);
+    width: 100%;
+    height: 5%;
+}
+
+.ck-content pre {
+    background: hsl(0deg 0% 0%)!important;
+    color: #fff!important;
+}
+
+.code-toolbar {
+    display: flex;
+    background: #272822;
+    border-radius: 5px;
+}
+  
+.line-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    gap: 5.3px;
+    padding-top: 27px;
+    color: #a7a7a7b3;
+    border-right: #a7a7a7b3 2px solid;
+    padding-right: 12px;
+}
+  
+.line-number {
+    margin-bottom: 4px;
+}
+  
+.buttonNav {
+    background-color: var(--theme-2);
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: var(--dark-font);
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .4rem .8rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+
+.buttonNav:hover {
+    background-color: var(--accent);
+    color: var(--light-font);
+}
+
+.buttonNav:hover a {
+    color: var(--light-font);
+}
+
+.buttonNav:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
